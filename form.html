@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Alt School Application Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>Alt School Application Form</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Program Information</legend>
+                <label for="program">Program:</label>
+                <select id="program" name="program">
+                    <option value="cloud-engineering">Cloud Engineering</option>
+                    <option value="frontend-development">Frontend Development</option>
+                    <option value="backend-development">Backend Development</option>
+                </select><br><br>
+
+                <label for="start-date">Preferred Start Date:</label>
+                <input type="date" id="start-date" name="start-date"><br><br>
+
+                <label for="reason">Why do you want to join?</label><br>
+                <textarea id="reason" name="reason" rows="4" cols="50"></textarea><br><br>
+            </fieldset>
+
+            <input type="submit" value="Submit Application">
+        </form>
+    </main>
+
+</body>
+</html>
